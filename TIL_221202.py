@@ -2,7 +2,7 @@ import random
 
 first = random.choice([0,1,2])
 second = random.choice([0,1,2])
-operator = random.choice(['+','-'])
+operator = random.choice(['+','-','*'])
 
 question = f'{first} {operator} {second} = '
 print(question, end = ' ')
@@ -12,6 +12,8 @@ if operator == "+":
     answer = first + second
 elif operator == "-":
     answer = first - second
+elif operator == "*":
+    answer = first * second
 
 if user_answer == answer:
     print("정답입니다.")
