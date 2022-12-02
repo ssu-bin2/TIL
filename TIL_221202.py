@@ -1,7 +1,7 @@
 import random
 
 first = random.choice([0,1,2])
-second = random.choice([0,1,2])
+second = random.choice([1,2])
 operator = random.choice(['+','-','*','/'])
 
 question = f'{first} {operator} {second} = '
